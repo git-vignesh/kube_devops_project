@@ -1,14 +1,14 @@
-kind: service
-apiVersion:  v1
+kind: Service                             
+apiVersion: v1
 metadata:
-  name: mrdevops
+  name: testuser
   labels:
-    app: mrdevops
+    app: testuser
 spec:
   ports:
-    - port: 8080
-      targetPort: 80
-      nodeport: 31200
+    - port: 8080                               
+      targetPort: 80                    
+      nodePort: 31200
   selector:
-    app: mrdevops
-  type: LoadBalancer
+    app: testuser                    
+  type: LoadBalancer                   
