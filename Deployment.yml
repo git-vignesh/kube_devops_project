@@ -4,9 +4,9 @@ metadata:
   name: mrdevops
 spec:
   replicas: 2
-  selector: #tells teh controller which pods to watch / belong to
-  matchLabels:
-    app: mrdevops
+  selector: # tells the controller which pods to watch / belong to
+    matchLabels:
+      app: mrdevops
   template:
     metadata:
       labels:
