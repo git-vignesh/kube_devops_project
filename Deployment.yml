@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: devvignesh
-          image: devvignesh/pipeline-job:v1.63
+          image: devvignesh/pipeline-job
           imagePullPolicy: Always
           ports:
             - containerPort: 80
