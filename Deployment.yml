@@ -1,19 +1,19 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata: 
-  name: testuser
+  name: devvignesh
 spec:
   replicas: 2
   selector: # tells the controller which pods to watch / belong to
     matchLabels:
-      app: testuser
+      app: devvignesh
   template:
     metadata:
       labels:
-        app: testuser
+        app: devvignesh
     spec:
       containers:
-        - name: testuser
+        - name: devvignesh
           image: devvignesh/pipeline-job
           imagePullPolicy: Always
           ports:
