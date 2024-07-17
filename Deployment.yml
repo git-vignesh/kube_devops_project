@@ -1,6 +1,6 @@
 kind: Deployment
 apiVersion: apps/v1
-metadata: 
+metadata:
   name: devvignesh
 spec:
   replicas: 2
